@@ -10,8 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private State state = State.Idle; //State atau animasi awal adalah idle
     private Collider2D collider;
     [SerializeField] private LayerMask Ground;
-    [SerializeField] public float speed;
-    [SerializeField] public float jump;
+    public float speed;
+    public float jump;
 
     public int maxHealth = 1000; //Healt maximum untuk player
     int currentHealth; // Health player
