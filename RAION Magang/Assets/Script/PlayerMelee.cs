@@ -19,7 +19,7 @@ public class PlayerMelee : MonoBehaviour
     {
         if(Time.time >= nextAttacktime) //Jika saat attack berlangsung
         {
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 Attack(); //Memanggil fungsi attack
                 nextAttacktime = Time.time + 1f / attackrate; //Attack yang berikutnya akan berlangsung setengah detik setelah attack berlangsung
